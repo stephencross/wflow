@@ -1,0 +1,29 @@
+uuid: 0dca6c30-e638-487e-ae48-f06209d41744
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.archive
+  module:
+    - system
+  theme:
+    - bartik
+id: archive
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:archive'
+settings:
+  id: 'system_menu_block:archive'
+  label: Archive
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/archive/*'

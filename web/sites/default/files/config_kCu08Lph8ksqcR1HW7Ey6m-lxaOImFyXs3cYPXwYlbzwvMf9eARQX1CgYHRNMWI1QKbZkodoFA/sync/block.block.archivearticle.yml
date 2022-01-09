@@ -1,0 +1,30 @@
+uuid: 9c821a84-5b98-4191-b9d7-cfadec62472f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c0b6345f-a74e-40fb-a949-7284d2879587'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: archivearticle
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:c0b6345f-a74e-40fb-a949-7284d2879587'
+settings:
+  id: 'block_content:c0b6345f-a74e-40fb-a949-7284d2879587'
+  label: 'Archive - Article'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/archive/article/*'
