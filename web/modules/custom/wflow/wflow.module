@@ -1,0 +1,12 @@
+<?php
+
+function wflow_pathauto_alias_alter(&$alias, array &$context) {
+  if ($context["module"] == "node"  && $context["bundle"] == "article") {
+    $node = $context["data"]["node"];
+    if ($node->moderation_state->value == "archived") {
+      $alias = "/archive" . $alias;
+    }
+  }
+} 
+
+

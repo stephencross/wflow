@@ -1,0 +1,9 @@
+name: wflow
+recipe: drupal9
+config:
+  webroot: web
+services:
+  appserver:
+    xdebug: true
+    config:
+      php: .vscode/php.ini 
